@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/getBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/getstarwd_bttn"
