@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/desiredleaguebg" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="238dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swooshlogo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Desired Leauge::"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/toogle"
+            android:fontFamily="@font/montserrat"
+            android:text="ToggleButton"
+            android:textColor="@color/white"
+            android:textOff="Mens"
+            android:textOn="Mens"
+            android:textSize="24sp"
+            tools:text="Mens" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/toogle"
+            android:fontFamily="@font/montserrat"
+            android:text="Womens"
+            android:textColor="@color/white"
+            android:textOff="Womens"
+            android:textOn="Womens"
+            android:textSize="24sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toogle"
+            android:fontFamily="@font/montserrat"
+            android:text="Co-ed"
+            android:textColor="@color/white"
+            android:textOff="Co-ed"
+            android:textOn="Co-ed"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/getstarwd_bttn"
+        android:fontFamily="@font/montserrat"
+        android:text="NEXT"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.69" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
