@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/montserrat"
-        android:text="Desired Leauge::"
+        android:text="Desired Leauge:"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="28sp"
@@ -56,12 +56,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/menBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="menClick"
             android:text="ToggleButton"
             android:textColor="@color/white"
             android:textOff="Mens"
@@ -70,12 +71,13 @@
             tools:text="Mens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/womenBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="womenClick"
             android:text="Womens"
             android:textColor="@color/white"
             android:textOff="Womens"
@@ -83,11 +85,12 @@
             android:textSize="24sp" />
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/coedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="coedClick"
             android:text="Co-ed"
             android:textColor="@color/white"
             android:textOff="Co-ed"
