@@ -4,12 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.swoosh.EXTRA_LEAUGE
+import com.example.swoosh.EXTRA_PLAYER
+import com.example.swoosh.Models.Playes
 import com.example.swoosh.R
 import kotlinx.android.synthetic.main.activity_leauge.*
 
 class leaugeActivity : Log_activity() {
-    var selectLeauge=""
+    var playes=Playes("","")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_leauge)
@@ -18,25 +19,25 @@ class leaugeActivity : Log_activity() {
     {
         womenBtn.isChecked=false
         coedBtn.isChecked=false
-        selectLeauge="mens"
+        playes.leauge="mens"
     }
     fun womenClick(view: View)
     {
         menBtn.isChecked=false
         coedBtn.isChecked=false
-        selectLeauge="women"
+        playes.leauge="women"
     }
     fun coedClick(view: View)
     {
         menBtn.isChecked=false
         womenBtn.isChecked=false
-        selectLeauge="coed"
+        playes.leauge="coed"
     }
     fun nextClick(view:View)
     {
-        if(selectLeauge!="") {
+        if(playes.leauge!="") {
             val nextpage = Intent(this, skill_activity::class.java)
-            nextpage.putExtra(EXTRA_LEAUGE,selectLeauge)
+            nextpage.putExtra(EXTRA_PLAYER,playes)
             startActivity(nextpage)
         }
         else
