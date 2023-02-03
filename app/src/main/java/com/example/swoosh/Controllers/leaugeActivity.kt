@@ -1,12 +1,12 @@
-package com.example.swoosh
+package com.example.swoosh.Controllers
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.swoosh.EXTRA_LEAUGE
+import com.example.swoosh.R
 import kotlinx.android.synthetic.main.activity_leauge.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 class leaugeActivity : Log_activity() {
     var selectLeauge=""

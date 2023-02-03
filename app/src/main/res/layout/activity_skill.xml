@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".skill_activity">
+    tools:context=".Controllers.skill_activity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -56,12 +56,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/beginBtn"
             android:layout_width="191dp"
             android:layout_height="61dp"
             android:layout_marginRight="8dp"
             android:background="@drawable/toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="beginClick"
             android:text="Beginner"
             android:textColor="@color/white"
             android:textOff="Beginner"
@@ -70,13 +71,14 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/ballBtn"
             android:layout_width="175dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:background="@drawable/toogle"
             android:fontFamily="@font/montserrat"
+            android:onClick="ballClick"
             android:text="BALLER"
             android:textColor="@color/white"
             android:textOff="BALLER"
@@ -86,12 +88,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/getstarwd_bttn"
+        android:onClick="finishClick"
         android:text="FINISH"
         android:textColor="@color/white"
         android:textSize="20sp"
